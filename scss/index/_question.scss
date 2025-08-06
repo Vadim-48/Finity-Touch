@@ -1,0 +1,70 @@
+.question {
+    display: flex;
+    margin-top: clamp(70px, 1.311rem + 9.8vw, 170px);
+
+    &__wrap-img {
+    }
+
+    &__title {
+        font-family: var(--second-family);
+        font-weight: 700;
+        line-height: 1.2em;
+        @include adaptiv-value("font-size", 60, 30);
+        letter-spacing: 0.02em;
+        text-align: center;
+        background: linear-gradient(144deg, #ffb78f 0%, #db73ff 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    &__img {
+        display: block;
+        margin: 0 auto;
+        @include adaptiv-value("width", 732, 340);
+        max-width: 732px;
+        min-width: 340px;
+        mix-blend-mode: screen;
+    }
+
+    &__accordion {
+        padding-top: 10px;
+    }
+}
+
+.accordion {
+
+    &__wrap{
+        margin-top: clamp(10px, 0.012rem + 1.96vw, 30px); 
+        box-shadow: 2px 2px 20px 0 rgba(239, 57, 255, 0.3);
+        background: #0d0d0d;
+        border-radius: 10px;
+        padding-bottom: 15px;
+
+        &:first-child{
+            margin-top: 0;
+        }
+    }
+    &__item {
+    }
+
+    &__title {
+        @include adaptiv-value("font-size", 28, 14);
+    }
+
+    &__text {
+        @include adaptiv-value("font-size", 19, 12);
+        line-height: 1.8em;
+        color: #959595;
+        font-weight: 400;
+        max-height: 0;
+        overflow: hidden;
+        margin: clamp(16px, 0.877rem + 0.39vw, 20px) 10px 0 10px;
+    }
+
+    &__btn {
+        display: flex;
+        justify-content: space-between;
+        padding: 30px 28px 0 20px;
+    }
+}

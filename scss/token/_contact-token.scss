@@ -1,0 +1,15 @@
+.contact-token{
+    &__img-left{
+        transform: scaleX(-1);
+        position: absolute;
+        z-index: -1;
+        top: 4%;
+        @include adaptiv-value("left", -80, -180);
+    }
+    &__img-right{
+        position: absolute;
+        z-index: -1;
+        bottom: 11%;
+        right: 0;
+    }
+}

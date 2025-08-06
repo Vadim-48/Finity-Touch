@@ -1,0 +1,25 @@
+.partners{
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    margin-top: clamp(22px, 0.487rem + 2.84vw, 51px);
+
+    &__content {
+        display: flex;
+        animation: run-line 30s linear infinite;
+    }
+
+    &__logo{
+        white-space: nowrap;
+    }
+}
+
+@keyframes run-line {
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}

@@ -1,0 +1,42 @@
+@import "null.scss";
+@import "base.scss";
+@import "btn.scss";
+@import "header.scss";
+@import "./index/about.scss";
+@import "./index/idea.scss";
+@import "./index/grant.scss";
+@import "./index/team.scss";
+@import "./index/partners.scss";
+@import "./index/question.scss";
+@import "./index/follow.scss";
+@import "./index/contact.scss";
+@import "footer.scss";
+//token
+@import "./token/finity-token.scss";
+@import "./token/idea-token.scss";
+@import "./token/tokenomic-token.scss";
+@import "./token/road-token.scss";
+@import "./token/question-token.scss";
+@import "./token/contact-token.scss";
+@import "./token/addres-token.scss";
+//fund
+@import "./fund/finity-fund.scss";
+@import "./fund/idea-fund.scss";
+@import "./fund/road-fund.scss";
+@import "./fund/question-fund.scss";
+@import "./fund/contact-fund.scss";
+//soon
+@import "./soon/soon.scss";
+
+@import "media.scss";
+@import "burger.scss";
+
+
+// @include adaptiv-value("width", 195, 149);
+// @include adaptiv-value("font-size", 60, 30);
+
+
+
+
+
+

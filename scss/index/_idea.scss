@@ -1,0 +1,72 @@
+.idea {
+    margin-top: 100px;
+
+    &__row {
+        margin-top: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 40px;
+        margin-bottom: 20px;
+    }
+
+    &__block {
+    }
+
+    &__title {
+        font-family: var(--second-family);
+        font-weight: 700;
+        @include adaptiv-value("font-size", 60, 24); 
+        margin-left: 26.5%;
+
+        &_color {
+            background: linear-gradient(144deg, #54d6ff 0%, #c275ff 54.69%, #f36aff 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+}
+.idea-block {
+    border-radius: 60px;
+    box-shadow: 2px 2px 9px 0 #91009d;
+    background: #0d0d0d;
+    min-width: 310px;
+    width: clamp(238px, 11.75rem + 10vw, 340px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    padding: clamp(15px, 0.631rem + 0.98vw, 25px);
+
+    &__icon {
+        display: block;
+        @include adaptiv-value("width", 90, 50);
+        min-width: 50px;
+    }
+
+    &__title {
+        font-weight: 600;
+        @include adaptiv-value("font-size", 28, 16); 
+        margin-top: 13px;
+    }
+
+    &__text {
+        @include adaptiv-value("font-size", 18, 12); 
+        letter-spacing: 0.02em;
+        text-align: center;
+        margin-top: 24px;
+        line-height: 1.15em;
+    }
+
+    &__link {
+        font-weight: 600;
+        @include adaptiv-value("font-size", 20, 15); 
+        background: linear-gradient(144deg, #86affe 0%, #a57aff 50.78%, #fb84ff 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-top: auto;
+        padding-top: 12px;
+    }
+}

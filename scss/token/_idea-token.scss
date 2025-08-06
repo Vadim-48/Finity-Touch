@@ -1,0 +1,9 @@
+.idea-token{
+    margin-top: -4%;
+
+    &__block{
+        @include adaptiv-value("width", 468, 110); 
+        min-width: 310px;
+        max-width: 480px;
+    }
+}

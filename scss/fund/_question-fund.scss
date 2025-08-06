@@ -1,0 +1,15 @@
+.question-fund {
+    &__title {
+        background: linear-gradient(149deg, #b2ff0f 0%, #76ffef 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+.accordion-fund{
+    &__wrap{
+        box-shadow: 2px 2px 20px 0 rgba(85, 255, 57, 0.5);
+    }
+}
+

@@ -1,0 +1,49 @@
+.finity {
+    position: relative;
+    z-index: -100;
+    &__img{
+        position: relative;
+        z-index: -1;
+        width: 100%;
+        margin-top: -120px;
+    }
+
+    &__wrap {
+        position: absolute;
+        top: 0;
+        width: 30%;
+        margin-top: 7.8%;
+    }
+
+    &__title {
+        font-family: var(--second-family);
+        font-weight: 600;
+        @include adaptiv-value("font-size", 120, 60);
+        &-item{
+            display: block;
+            background: linear-gradient(144deg, #fc84ff 0%, #54d1fa 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        &-item:last-child{
+            margin-left: 33%;
+        }
+    }
+
+    &__text {
+        font-family: var(--second-family);
+        font-weight: 400;
+        @include adaptiv-value("font-size", 22, 18);
+        margin-top: 2%;
+        line-height: 1.3em;
+    }
+
+    &__btn {
+        @include adaptiv-value("width", 260, 209);
+        @include adaptiv-value("font-size", 22, 20);
+        margin-top: 7.5%;
+        @include adaptiv-value("height", 63, 52);
+    }
+}
+

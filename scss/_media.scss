@@ -1,0 +1,173 @@
+@media (max-width: 1440px){
+
+    .footer{
+        justify-content: center;
+        padding-top: 20px;
+        &__logo{
+            order: 2;
+            flex-basis: 90%;
+        }
+        &__img{
+            display: none;
+        }
+    }
+
+
+}
+@media (max-width: 1200px){
+    .contact, .contact-token, .contact-fund  {
+        &__img-right, &__img-left{
+            display: none;
+        }
+    }
+    .form{
+        margin-left: 0;
+    }
+    .finity {
+
+        &__wrap {
+            margin: 0 auto;
+            width: 80%;
+            position: relative;
+        }
+        &__title {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        &__btn {
+            margin: 8% auto 0 auto;
+        }
+    }
+    .idea-token{
+        &__row{
+            margin-top: 10%;
+        }
+    }
+}
+
+@media (max-width: 1024px){
+    .display-none{
+        display: none;
+    }
+    .about {
+        flex-direction: column-reverse;
+        align-items: center;
+        // flex-wrap: wrap;
+        text-align: center;
+    
+        &__column{
+        }
+        &__title{
+            margin: 20px 0 0 0;
+        }
+        &__btn{
+            display: flex;
+            justify-content: center;
+        }
+
+        .contact-fund{
+            &__wrap {
+                padding: 0;
+            }
+            &__btn {
+                margin-top: 0;
+            }
+        }
+    }
+    .row{
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+
+        &__icon{
+            margin-left: 0;
+        }
+    }
+
+    .games {
+        &__row{
+            flex-direction: column-reverse;
+        }
+        &__icon, &__column {
+            margin: 0;
+        }
+    }
+
+    .column{
+        margin-left: 0;
+        
+        &__bottom{
+            flex-direction: column;
+            margin-top: 28px;
+        }
+        &__btn{
+            margin: 0 auto;
+            margin-bottom: -3%;
+        }
+    }
+
+    .partners{
+        order: -1;
+    }
+    .question {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer{
+        border-bottom: 1px solid #fff;
+        border-top: 1px solid #fff;
+        padding-top: 16px;
+
+        &__nav {
+            grid-column: 1/11;
+            grid-row: 2/3;
+            justify-self: center;
+        }
+        &__btn {
+            grid-column: 1/11;
+            grid-row: 3/4;
+            justify-self: center;
+        }
+        &__logo {
+            grid-column: 1/11;
+            grid-row: 1/2;
+            justify-self: center;
+        }
+        &__text {
+            grid-column: 1/11;
+            grid-row: 4/5;
+            justify-self: center;
+            & p{
+                text-align: center;
+            }
+        }
+    }
+ 
+}
+@media (max-width: 991px){
+}
+@media (max-width: 768px){
+    .idea__title{
+        margin-left: 0;
+        text-align: center;
+    }
+}
+@media (max-width: 575px){
+    .container {
+        padding: 0 2px;
+    }
+    .about__block{
+       margin-left: 0;
+    }
+    .footer__nav{
+        flex-direction: column;
+        &-menu{
+            flex-direction: column;
+        }
+        & .nav-menu__lang {
+            border-left: 0;
+            margin-left: 0;
+        }
+    }
+}

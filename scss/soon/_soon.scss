@@ -1,0 +1,37 @@
+.soon-page {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__body{
+        position: relative;
+        overflow: hidden;
+    }
+    &__title{
+        font-family: var(--second-family);
+        font-weight: 600;
+        @include adaptiv-value("font-size", 150, 50);
+        letter-spacing: 0.12em;
+        text-align: center;
+    }
+    &__decor-l{
+        display: block;
+        @include adaptiv-value("width", 613, 309);
+        @include adaptiv-value("height", 880, 552);
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: -1;
+    }
+    &__decor-r{
+        display: block;
+        @include adaptiv-value("width", 609, 269);
+        @include adaptiv-value("height", 859, 371);
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+    }
+}

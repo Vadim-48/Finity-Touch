@@ -1,0 +1,19 @@
+.follow {
+    margin-top: clamp(55px, -0.453rem + 12.45vw, 182px);
+
+    &__title {
+        font-family: var(--second-family);
+        font-weight: 700;
+        @include adaptiv-value("font-size", 60, 21);
+        text-align: center;    
+    }
+
+    &__img {
+        @include adaptiv-value("width", 1235, 304);
+        max-width: 1235px;
+        min-width: 304px;
+        display: block;
+        margin: 0 auto;
+        margin-top: clamp(45px, 0.944rem + 5.98vw, 106px);
+    }
+}

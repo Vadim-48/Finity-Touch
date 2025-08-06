@@ -1,0 +1,93 @@
+.team {
+    margin-top: clamp(115px, 5.196rem + 6.37vw, 180px);
+    position: relative;
+
+    &__title{
+        font-family: var(--second-family);
+        font-weight: 700;
+        @include adaptiv-value("font-size", 60, 30);
+        text-align: center; 
+    }
+
+    &__row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: clamp(10px, -0.509rem + 3.63vw, 47px);
+        flex-wrap: wrap;
+        margin-top: clamp(23px, 0.61rem + 2.65vw, 50px);
+    }
+
+    &__card {
+    }
+    &__btn{
+       margin: 0 auto;
+       margin-top: clamp(25px, 0.031rem + 4.9vw, 75px); 
+    }
+    &__decor-l{
+        display: block;
+        position: absolute;
+        left: 0;
+        top: -320px;
+        z-index: -1;
+        @include adaptiv-value("width", 890, 330);
+    }
+    &__decor-r{
+        display: block;
+        position: absolute;
+        right: 0;
+        z-index: -1;
+        @include adaptiv-value("width", 960, 325);
+    }
+}
+.team-card {
+    border-radius: 10px;
+    box-shadow: 2px 2px 9px 0 #91009d;
+    background: #0d0d0d;
+    @include adaptiv-value("width", 280, 130);
+    @include adaptiv-value("height", 426, 200);
+    min-width: 130px;
+    min-height: 200px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: clamp(10px, 0.319rem + 0.98vw, 20px);
+
+    &__photo {
+    }
+
+    &__img{
+        width: 100%;
+    }
+
+    &__about {
+        padding: 0 10px;
+    }
+
+    &__title {
+        @include adaptiv-value("font-size", 23, 12);
+        font-weight: 600;
+        text-align: center;
+        margin-top: clamp(8px, 0.194rem + 0.98vw, 18px);
+    }
+
+    &__position {
+        display: block;
+        @include adaptiv-value("font-size", 14, 9);
+        text-align: center;
+        margin-top: clamp(4px, 0.036rem + 0.69vw, 11px);
+    }
+
+    &__social {
+        margin-top: auto;
+        display: flex;
+        justify-content: center;
+        gap: clamp(0.75rem, 0.505rem + 0.78vw, 1.25rem);
+        &-icon{
+            @include adaptiv-value("width", 19, 12);
+            min-width: 9px;
+        }
+    }
+
+}
+

@@ -1,0 +1,117 @@
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    @include adaptiv-value("font-size", 22, 19);
+    border: 2px solid #fff;
+    border-radius: 50px;
+    height: 63px;
+    @include adaptiv-value("width", 195, 149);
+    max-width: 195px;
+    min-width: 149px;
+    transition: all 0.3s ease;
+}
+
+.btn_color{
+    border-width: 0;
+    @include adaptiv-value("width", 210, 149);
+    max-width: 210px;
+    background: linear-gradient(144deg, #54d6ff 0%, #c275ff 54.69%, #f36aff 100%);
+}
+
+
+.btn_white{
+    border: 2px solid #fff;
+    border-radius: 50px 0;
+    width: 133px;
+    min-width: 133px;
+}
+
+.btn_arrow-down{
+    margin-left: 10px;
+}
+
+.btn-grad{
+    border-radius: 60px 0;
+    @include adaptiv-value("font-size", 27, 15);
+    @include adaptiv-value("width", 290, 168);
+    max-width: 290px;
+    min-width: 168px;
+    height: 73px;
+    border: none;
+    position: relative;
+    background: #0d0d0d;
+    gap: 15px;
+
+        &::after{
+            content: '';
+            position: absolute;
+            height: 107%;
+            width: 102%;
+            border-radius: 60px 0;
+            background: linear-gradient( to bottom, #b2ff0f, #76ffef );
+            z-index: -1;
+        }
+}
+
+.form__btn {
+    border-radius: 0 60px;
+    box-shadow: 2px 2px 20px 0 rgba(239, 57, 255, 0.5);
+    @include adaptiv-value("width", 220, 133);
+    min-width: 133px;
+    height: 67px;
+    margin: 0 auto;
+    margin-top: clamp(29px, 0.863rem + 3.04vw, 60px);
+    border-radius: 0 60px;
+    &::after{
+        border-radius: 0 60px;
+    }
+}
+
+._violet::after{
+     background: linear-gradient(to right, rgb(34, 82, 158), rgb(101, 22, 135) );
+}
+
+._violet-blue::after{
+    background: linear-gradient(to right, rgb(101, 22, 135), rgb(34, 82, 158) );
+}
+
+._orange::after{
+    background: linear-gradient(145deg, #fb6b54 0%, #ff9344 100%);
+}
+
+
+// focus (focus-visible), hover, active
+
+.btn:focus-visible, .btn:hover{
+    background: #4f96b5;  
+}
+
+.btn:active{
+    color: #000;
+}
+
+.link:focus-visible, .link:hover {
+    text-decoration-line: underline;
+}
+
+.link:active{
+    color: #d561d7;
+}
+
+.idea-block__link{
+    &:hover, &:focus-visible{
+        background: greenyellow;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    &:active{
+        background: rgb(234, 37, 224);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
