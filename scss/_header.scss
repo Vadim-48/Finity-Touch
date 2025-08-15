@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     @include adaptiv-value("font-size", 22, 16); 
-    padding: 23px clamp(12px, 0.505rem + 0.78vw, 10px) 28px clamp(12px, -0.721rem + 4.71vw, 60px);
+    padding: 23px clamp(12px, 0.505rem + 0.78vw, 10px) clamp(12px, -0.173rem + 2.05vw, 28px) clamp(12px, -0.721rem + 4.71vw, 60px);
 
     &__logo {
         padding-top: 5px;
@@ -64,6 +64,7 @@
         width: 14px;
     }
 }
+
 
 
 
